@@ -16,3 +16,4 @@ function retractProjectsList(element) {
     element.innerHTML = "Visa mer";
     element.setAttribute("onclick", "expandProjectsList(this)");
 }
+
