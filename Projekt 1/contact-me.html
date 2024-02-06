@@ -1,207 +1,223 @@
 <!DOCTYPE html>
 <html lang="se-SE">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Om mig</title>
-    <link rel="icon" type="image/x-icon" href="CoolCvimage.jpg">
-</head>
-<body>
-<div class = "header-position">
-    <div class="header-style">
-    <header>Melker Martinsson</header></div>
-    <div id="menu"><nav>
-      <ul>
-        <li><a href="index.html">Om mig</a></li>
-        <li><a href="project.html">Framtid och projekt</a></li>
-        <li><a href="#">Kontakta mig</a></li>
-      </ul>
-    </nav></div>
-</div>
-
-
-<hr>
-<div class="columns">
-    <div class="container">
-      <div style="text-align:center">
-        <h2>Kontakta mig</h2>
-        <p>Sväng förbi för ett Wienerbröd, eller lämna ett medelande:</p>
+    <link rel="icon" type="image/x-icon" href="CoolCvimage.jpg" />
+  </head>
+  <body>
+    <div class="header-position">
+      <div class="header-style">
+        <header>Melker Martinsson</header>
       </div>
-      <div class="row">
-        <div class="contact-column">
-          <img src="Pictures/CoolCvimage.jpg" style="width:100%">
+      <div id="menu">
+        <nav>
+          <ul>
+            <li><a href="index.html">Om mig</a></li>
+            <li><a href="project.html">Framtid och projekt</a></li>
+            <li><a href="#">Kontakta mig</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <hr />
+    <div class="columns">
+      <div class="container">
+        <div style="text-align: center">
+          <h2>Kontakta mig</h2>
+          <p>Sväng förbi för ett Wienerbröd, eller lämna ett medelande:</p>
         </div>
-        <div class="contact-column">
-          <form method="POST" action="http://localhost:5000/contact" is="dmx-serverconnect-form">
-            <label for="fname">Förnamn</label>
-            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
-            <label for="lname">Efternamn</label>
-            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
-            <label for="country">Nationalitet</label>
-            <select id="country" name="country">
-              <option value="SE">Sverige</option>
-              <option value="NO">Norge</option>
-              <option value="DK">Danmark</option>
-              <option value="AF">Afghanistan</option>
-              <option value="AL">Albanien</option>
-              <option value="DZ">Algeriet</option>
-              <option value="AS">Amerikanska Samoa</option>
-              <option value="AD">Andorra</option>
-              <option value="AO">Angola</option>
-              <option value="AI">Anguilla</option>
-              <option value="AQ">Antarktis</option>
-              <option value="AG">Antigua och Barbuda</option>
-              <option value="AR">Argentina</option>
-              <option value="AM">Armenien</option>
-              <option value="AW">Aruba</option>
-              <option value="AU">Australien</option>
-              <option value="AT">Österrike</option>
-              <option value="AZ">Azerbajdzjan</option>
-              <option value="BS">Bahamas</option>
-              <option value="BH">Bahrain</option>
-              <option value="BD">Bangladesh</option>
-              <option value="BB">Barbados</option>
-              <option value="BY">Vitryssland</option>
-              <option value="BE">Belgien</option>
-              <option value="BZ">Belize</option>
-              <option value="BJ">Benin</option>
-              <option value="BM">Bermuda</option>
-              <option value="BT">Bhutan</option>
-              <option value="BO">Bolivia</option>
-              <option value="BA">Bosnien och Hercegovina</option>
-              <option value="BW">Botswana</option>
-              <option value="BV">Bouvetön</option>
-              <option value="BR">Brasilien</option>
-              <option value="IO">Brittiska territoriet i Indiska oceanen</option>
-              <option value="BN">Brunei</option>
-              <option value="BG">Bulgarien</option>
-              <option value="BF">Burkina Faso</option>
-              <option value="BI">Burundi</option>
-              <option value="KH">Kambodja</option>
-              <option value="CM">Kamerun</option>
-              <option value="CA">Kanada</option>
-              <option value="CV">Kap Verde</option>
-              <option value="KY">Caymanöarna</option>
-              <option value="CF">Centralafrikanska republiken</option>
-              <option value="TD">Tchad</option>
-              <option value="CL">Chile</option>
-              <option value="CN">Kina</option>
-              <option value="CX">Julön</option>
-              <option value="CC">Kokosöarna</option>
-              <option value="CO">Colombia</option>
-              <option value="KM">Komorerna</option>
-              <option value="CG">Kongo-Brazzaville</option>
-              <option value="CD">Kongo-Kinshasa</option>
-              <option value="CK">Cooköarna</option>
-              <option value="CR">Costa Rica</option>
-              <option value="CI">Elfenbenskusten</option>
-              <option value="HR">Kroatien</option>
-              <option value="CU">Kuba</option>
-              <option value="CW">Curaçao</option>
-              <option value="CY">Cypern</option>
-              <option value="CZ">Tjeckien</option>
-              <option value="DK">Danmark</option>
-              <option value="DJ">Djibouti</option>
-              <option value="DM">Dominica</option>
-              <option value="DO">Dominikanska republiken</option>
-              <option value="EC">Ecuador</option>
-              <option value="EG">Egypten</option>
-              <option value="SV">El Salvador</option>
-              <option value="GQ">Ekvatorialguinea</option>
-              <option value="ER">Eritrea</option>
-              <option value="EE">Estland</option>
-              <option value="SZ">Eswatini</option>
-              <option value="ET">Etiopien</option>
-              <option value="FK">Falklandsöarna</option>
-              <option value="FO">Färöarna</option>
-              <option value="FJ">Fiji</option>
-              <option value="FI">Finland</option>
-              <option value="FR">Frankrike</option>
-              <option value="GF">Franska Guyana</option>
-              <option value="PF">Franska Polynesien</option>
-              <option value="TF">Franska sydterritorierna</option>
-              <option value="GA">Gabon</option>
-              <option value="GM">Gambia</option>
-              <option value="GE">Georgien</option>
-              <option value="DE">Tyskland</option>
-              <option value="GH">Ghana</option>
-              <option value="GI">Gibraltar</option>
-              <option value="GR">Grekland</option>
-              <option value="GL">Grönland</option>
-              <option value="GD">Grenada</option>
-              <option value="GP">Guadeloupe</option>
-              <option value="GU">Guam</option>
-              <option value="GT">Guatemala</option>
-              <option value="GG">Guernsey</option>
-              <option value="GN">Guinea</option>
-              <option value="GW">Guinea-Bissau</option>
-              <option value="GY">Guyana</option>
-              <option value="HT">Haiti</option>
-              <option value="HM">Heard- och McDonaldöarna</option>
-              <option value="VA">Vatikanstaten</option>
-              <option value="HN">Honduras</option>
-              <option value="HK">Hongkong</option>
-              <option value="HU">Ungern</option>
-              <option value="IS">Island</option>
-              <option value="IN">Indien</option>
-              <option value="ID">Indonesien</option>
-              <option value="IR">Iran</option>
-              <option value="IQ">Irak</option>
-              <option value="IE">Irland</option>
-              <option value="IM">Isle of Man</option>
-              <option value="IL">Israel</option>
-              <option value="IT">Italien</option>
-              <option value="JM">Jamaica</option>
-              <option value="JP">Japan</option>
-              <option value="JE">Jersey</option>
-              <option value="JO">Jordanien</option>
-              <option value="KZ">Kazakstan</option>
-              <option value="KE">Kenya</option>
-              <option value="KI">Kiribati</option>
-              <option value="KP">Nordkorea</option>
-              <option value="KR">Sydkorea</option>
-              <option value="KW">Kuwait</option>
-              <option value="KG">Kirgizistan</option>
-              <option value="LA">Laos</option>
-              <option value="LV">Lettland</option>
-              <option value="LB">Libanon</option>
-              <option value="LS">Lesotho</option>
-              <option value="LR">Liberia</option>
-              <option value="LY">Libyen</option>
-              <option value="LI">Liechtenstein</option>
-              <option value="LT">Litauen</option>
-              <option value="LU">Luxemburg</option>
-              <option value="MO">Macao</option>
-              <option value="MG">Madagaskar</option>
-              <option value="MW">Malawi</option>
-              <option value="MY">Malaysia</option>
-              <option value="MV">Maldiverna</option>
-              <option value="ML">Mali</option>
-              <option value="MT">Malta</option>
-              <option value="MH">Marshallöarna</option>
-              <option value="MQ">Martinique</option>
-              <option value="MR">Mauretanien</option>
-              <option value="MU">Mauritius</option>
-              <option value="YT">Mayotte</option>
-              <option value="MX">Mexiko</option>
-            </select>
-            <label for="subject">Ämne</label>
-            <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:170px"></textarea>
-            <input type="submit" value="Lämna in">
-          </form>
+        <div class="row">
+          <div class="contact-column">
+            <img src="Pictures/CoolCvimage.jpg" style="width: 100%" />
+          </div>
+          <div class="contact-column">
+            <form
+              method="POST"
+              action="http://localhost:5000/contact"
+              is="dmx-serverconnect-form"
+            >
+              <label for="fname">Förnamn</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ditt förnamn.."
+              />
+              <label for="lname">Efternamn</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Ditt efternamn.."
+              />
+              <label for="country">Nationalitet</label>
+              <select id="country" name="country">
+                <option value="SE">Sverige</option>
+                <option value="NO">Norge</option>
+                <option value="DK">Danmark</option>
+                <option value="AF">Afghanistan</option>
+                <option value="AL">Albanien</option>
+                <option value="DZ">Algeriet</option>
+                <option value="AS">Amerikanska Samoa</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AI">Anguilla</option>
+                <option value="AQ">Antarktis</option>
+                <option value="AG">Antigua och Barbuda</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenien</option>
+                <option value="AW">Aruba</option>
+                <option value="AU">Australien</option>
+                <option value="AT">Österrike</option>
+                <option value="AZ">Azerbajdzjan</option>
+                <option value="BS">Bahamas</option>
+                <option value="BH">Bahrain</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BB">Barbados</option>
+                <option value="BY">Vitryssland</option>
+                <option value="BE">Belgien</option>
+                <option value="BZ">Belize</option>
+                <option value="BJ">Benin</option>
+                <option value="BM">Bermuda</option>
+                <option value="BT">Bhutan</option>
+                <option value="BO">Bolivia</option>
+                <option value="BA">Bosnien och Hercegovina</option>
+                <option value="BW">Botswana</option>
+                <option value="BV">Bouvetön</option>
+                <option value="BR">Brasilien</option>
+                <option value="IO">
+                  Brittiska territoriet i Indiska oceanen
+                </option>
+                <option value="BN">Brunei</option>
+                <option value="BG">Bulgarien</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi</option>
+                <option value="KH">Kambodja</option>
+                <option value="CM">Kamerun</option>
+                <option value="CA">Kanada</option>
+                <option value="CV">Kap Verde</option>
+                <option value="KY">Caymanöarna</option>
+                <option value="CF">Centralafrikanska republiken</option>
+                <option value="TD">Tchad</option>
+                <option value="CL">Chile</option>
+                <option value="CN">Kina</option>
+                <option value="CX">Julön</option>
+                <option value="CC">Kokosöarna</option>
+                <option value="CO">Colombia</option>
+                <option value="KM">Komorerna</option>
+                <option value="CG">Kongo-Brazzaville</option>
+                <option value="CD">Kongo-Kinshasa</option>
+                <option value="CK">Cooköarna</option>
+                <option value="CR">Costa Rica</option>
+                <option value="CI">Elfenbenskusten</option>
+                <option value="HR">Kroatien</option>
+                <option value="CU">Kuba</option>
+                <option value="CW">Curaçao</option>
+                <option value="CY">Cypern</option>
+                <option value="CZ">Tjeckien</option>
+                <option value="DK">Danmark</option>
+                <option value="DJ">Djibouti</option>
+                <option value="DM">Dominica</option>
+                <option value="DO">Dominikanska republiken</option>
+                <option value="EC">Ecuador</option>
+                <option value="EG">Egypten</option>
+                <option value="SV">El Salvador</option>
+                <option value="GQ">Ekvatorialguinea</option>
+                <option value="ER">Eritrea</option>
+                <option value="EE">Estland</option>
+                <option value="SZ">Eswatini</option>
+                <option value="ET">Etiopien</option>
+                <option value="FK">Falklandsöarna</option>
+                <option value="FO">Färöarna</option>
+                <option value="FJ">Fiji</option>
+                <option value="FI">Finland</option>
+                <option value="FR">Frankrike</option>
+                <option value="GF">Franska Guyana</option>
+                <option value="PF">Franska Polynesien</option>
+                <option value="TF">Franska sydterritorierna</option>
+                <option value="GA">Gabon</option>
+                <option value="GM">Gambia</option>
+                <option value="GE">Georgien</option>
+                <option value="DE">Tyskland</option>
+                <option value="GH">Ghana</option>
+                <option value="GI">Gibraltar</option>
+                <option value="GR">Grekland</option>
+                <option value="GL">Grönland</option>
+                <option value="GD">Grenada</option>
+                <option value="GP">Guadeloupe</option>
+                <option value="GU">Guam</option>
+                <option value="GT">Guatemala</option>
+                <option value="GG">Guernsey</option>
+                <option value="GN">Guinea</option>
+                <option value="GW">Guinea-Bissau</option>
+                <option value="GY">Guyana</option>
+                <option value="HT">Haiti</option>
+                <option value="HM">Heard- och McDonaldöarna</option>
+                <option value="VA">Vatikanstaten</option>
+                <option value="HN">Honduras</option>
+                <option value="HK">Hongkong</option>
+                <option value="HU">Ungern</option>
+                <option value="IS">Island</option>
+                <option value="IN">Indien</option>
+                <option value="ID">Indonesien</option>
+                <option value="IR">Iran</option>
+                <option value="IQ">Irak</option>
+                <option value="IE">Irland</option>
+                <option value="IM">Isle of Man</option>
+                <option value="IL">Israel</option>
+                <option value="IT">Italien</option>
+                <option value="JM">Jamaica</option>
+                <option value="JP">Japan</option>
+                <option value="JE">Jersey</option>
+                <option value="JO">Jordanien</option>
+                <option value="KZ">Kazakstan</option>
+                <option value="KE">Kenya</option>
+                <option value="KI">Kiribati</option>
+                <option value="KP">Nordkorea</option>
+                <option value="KR">Sydkorea</option>
+                <option value="KW">Kuwait</option>
+                <option value="KG">Kirgizistan</option>
+                <option value="LA">Laos</option>
+                <option value="LV">Lettland</option>
+                <option value="LB">Libanon</option>
+                <option value="LS">Lesotho</option>
+                <option value="LR">Liberia</option>
+                <option value="LY">Libyen</option>
+                <option value="LI">Liechtenstein</option>
+                <option value="LT">Litauen</option>
+                <option value="LU">Luxemburg</option>
+                <option value="MO">Macao</option>
+                <option value="MG">Madagaskar</option>
+                <option value="MW">Malawi</option>
+                <option value="MY">Malaysia</option>
+                <option value="MV">Maldiverna</option>
+                <option value="ML">Mali</option>
+                <option value="MT">Malta</option>
+                <option value="MH">Marshallöarna</option>
+                <option value="MQ">Martinique</option>
+                <option value="MR">Mauretanien</option>
+                <option value="MU">Mauritius</option>
+                <option value="YT">Mayotte</option>
+                <option value="MX">Mexiko</option>
+              </select>
+              <label for="subject">Ämne</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Skriv något.."
+                style="height: 170px"
+              ></textarea>
+              <input type="submit" value="Lämna in" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
- 
-  
-</div>
 
-<footer>
- 
-</footer>
-</div>
-
-
-</body>
+    <footer></footer>
+  </body>
 </html>
