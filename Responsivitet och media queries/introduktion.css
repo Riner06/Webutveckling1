@@ -1,0 +1,106 @@
+/* Skriv all styling för stora skärmar först */
+@media screen and (max-width : 1800px) {
+    .container {
+        display: flex;
+        width:90%;
+        margin-left: 5%;
+      }
+      
+      .item {
+        width:25%;
+        padding: 5%;
+        border: solid black 1%;
+        background-color:orchid ;
+      }
+      .body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .header-position {
+        display: grid;
+        grid-template-columns: 20% 60% 60%;
+      }
+      .header-style {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 90%;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto auto;
+        padding: 15px 15px;
+      }
+      #menu {
+        padding: 20px;
+      }
+      
+      #menu li {
+        float: left;
+        background: rgb(24, 158, 158);
+        list-style-type: none;
+        border-radius: 25px;
+        width: 150px;
+        height: 35px;
+        margin-left: 100px;
+      }
+      
+      #menu li a {
+        display: block;
+        padding: 8px;
+        border-radius: 25px;
+      }
+      
+      #menu li a:hover {
+        background: #ffffff;
+      }
+      
+      #menu li a:active {
+        background: white;
+      }
+      
+    .myimage {
+        display: none;
+    }
+
+}
+
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (max-width: 1000px) {
+    .container {
+      flex-wrap: wrap;
+      width: 90%;
+      margin-left: 10%;
+    }
+    .item {
+      width: 35%;
+      border-color: black;
+      background-color: green;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (max-width: 600px) {
+    .container {
+      display: inline;
+    }
+    .item {
+      width: 90%;
+      background-color: pink;
+    }
+
+    #menu {
+        display:none;
+    }
+    .myimage {
+        position: relative;
+        border-radius: 5%;
+        width: 95%;
+        margin-left: 3%;
+        display: flex;
+      }
+    .myimage:hover {
+        background-color: red;
+    }
+    .myimage:active {
+        background-color: green;
+    }
+  }
