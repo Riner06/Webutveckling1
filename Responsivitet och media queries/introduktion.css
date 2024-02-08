@@ -1,4 +1,4 @@
-/* Skriv all styling för stora skärmar först */
+
 @media screen and (max-width : 1800px) {
     .container {
         display: flex;
@@ -30,6 +30,8 @@
       }
       #menu {
         padding: 20px;
+        display:block;
+        z-index:2;
       }
       
       #menu li {
@@ -63,7 +65,7 @@
 }
 
   
-  /* Medium devices (landscape tablets, 768px and up) */
+
   @media screen and (max-width: 1000px) {
     .container {
       flex-wrap: wrap;
@@ -75,9 +77,18 @@
       border-color: black;
       background-color: green;
     }
+
+    #menu {
+        display:block;
+        z-index=2;
+    }
+
+    .myimage {
+        display: none;
+    }
   }
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
+ 
   @media screen and (max-width: 600px) {
     .container {
       display: inline;
@@ -87,15 +98,13 @@
       background-color: pink;
     }
 
-    #menu {
-        display:none;
-    }
+
     .myimage {
         position: relative;
         border-radius: 5%;
-        width: 95%;
+        width: 35%;
         margin-left: 3%;
-        display: flex;
+        display: block;
       }
     .myimage:hover {
         background-color: red;
@@ -103,4 +112,20 @@
     .myimage:active {
         background-color: green;
     }
-  }
+
+    #menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        top:17%;
+    }
+    
+    #menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+  }*/
