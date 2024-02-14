@@ -1,7 +1,21 @@
 
-@media screen and (max-width : 1800px) {
+@media screen and (min-width: 769px) {
+  .popdown {
+      width: 100px; /* Adjust as needed */
+      height: 100px; /* Adjust as needed */
+  }
+  .myimage{
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    right:30%;
+  }
+}
+
+
+@media screen and (max-width : 768px) {
     .container {
         display: flex;
+        flex-wrap: wrap;
         width:90%;
         margin-left: 5%;
       }
@@ -60,13 +74,20 @@
       
     .myimage {
         display: none;
+        height: 100px;
+        width: 100px;
     }
+    .popdown{
+      height: 100px;
+      width: 100px;
+    }
+    
 
 }
 
   
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 600px) {
     .container {
       flex-wrap: wrap;
       width: 90%;
@@ -80,16 +101,22 @@
 
     #menu {
         display:block;
-        z-index=2;
+        z-index:2;
     }
 
     .myimage {
         display: none;
+        size-adjust: 2;
+    }
+    .popdown{
+      height: 100px;
+      width: 100px;
     }
   }
   
+  
  
-  @media screen and (max-width: 600px) {
+  /*@media screen and (max-width: 600px) {
     .container {
       display: inline;
     }
