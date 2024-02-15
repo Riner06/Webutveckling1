@@ -1,12 +1,127 @@
 
+
+
+
+
+/* För skärmar större än 992px */
+@media screen and (min-width: 993px) {
+  .container, #menu.popdown {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: 2 1 0 calc(33.33% - 20px);
+    margin: 10px;
+  }
+  .myimage,.myimagebutton {
+   display:none;
+  }
+  
+}
+
+/* För skärmar mellan 600px och 992px */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: 1 0 calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .myimage {
+    width: 75px; /* Justera efter behov */
+    height: 75px; /* Justera efter behov */
+  }
+  #menu.popdown
+  {
+    display:none;
+  }
+}
+
+/* För skärmar mindre än 600px */
+@media screen and (max-width: 599px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .myimage {
+    width: 50px; /* Justera efter behov */
+    height: 50px; /* Justera efter behov */
+  }
+  #menu.popdown
+  {
+    display:none;
+  }
+  h1 {
+    font-size: 1em; /* Ännu mindre storlek för skärmar mindre än 600px */
+  }
+  #menu {
+    display: none;
+  }
+  .myimage {
+    display: block;
+  }
+}
+
+/* Ändra storlek på rubriken baserat på skärmstorlek */
+h1 {
+  font-size: 2em; /* Standardstorlek */
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 1.5em; /* Mindre storlek för skärmar mellan 600px och 992px */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @media screen and (min-width: 769px) {
   .popdown {
-      width: 100px; /* Adjust as needed */
-      height: 100px; /* Adjust as needed */
+      width: 100px; 
+      height: 100px;
   }
   .myimage{
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
+    width: 100px; 
+    height: 100px; 
     right:30%;
   }
 }
@@ -28,6 +143,7 @@
       }
       .body {
         font-family: Georgia, 'Times New Roman', Times, serif;
+        
       }
       .header-position {
         display: grid;
@@ -114,7 +230,7 @@
     }
   }
   
-  
+  */
  
   /*@media screen and (max-width: 600px) {
     .container {
