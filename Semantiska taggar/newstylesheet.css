@@ -1,0 +1,44 @@
+li:first-child, p:first-child
+{
+    background-color: aqua;
+    font-weight: 100;
+}
+li:nth-child(2),p:nth-child(2)
+{
+    background-color: darkviolet;
+    font-weight: 50;
+}
+li:last-child
+{
+    background-color: crimson;
+    font-weight: 200;
+    
+}
+
+li::before
+{
+    content:'👻';
+}
+li:nth-child(even)::first-letter
+{
+    font-size: 3em;
+}
+p:first-line
+{
+    background-color: violet;
+}
+body :not(p) {
+    text-decoration: overline underline;
+  }
+
+  .unselectable 
+  {
+    -webkit-user-select: none; /* Safari */
+    user-select: none;
+  }
+  
+  .all 
+  {
+    -webkit-user-select: all;
+    user-select: all;
+  }
